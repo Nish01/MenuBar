@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Menu Bar Test</title>
+    
+    <!-- Keep CSS at the top to render page first. All JS script refs placed at the before closing </body> tag -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+ 
+<body>
+
+<!--NAV MENU -->
+<nav id="myNav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">NEO</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="#">MENU</a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle downDrop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Go to projects <span class="caret"></span></a>
+              
+              <ul class="dropdown-menu dList" id="dropList">
+                <form role="form" class="navbar-form">
+                  <div class="form-group has-feedback has-feedback-left">
+                    <i class="form-control-feedback glyphicon glyphicon-search"></i> 
+                    <input type="text" id="mySearch" class="form-control" placeholder="Search">
+                  </div>
+                </form>
+
+                <li role="separator" class="divider"></li>
+
+              </ul>
+
+        </li>
+      
+        <li><a href="#">Products</a></li>
+
+    </ul>
+    </div>
+  </div>
+</nav>
+<!--NAV MENU -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+
+<!--CONTAINER -->
+<div id="main-wrapper" class="container-fluid">
+ 
+ <!--TOP H1 -->
+  <div id="toph1">
+    <section id="s1">
+      <h1 class="headingsCen">NEO</h1>
+      <hr>
+      <br>
+    </section>
+  </div>
+  <!--TOP H1 -->
+
+
+</div>
+<!--CONTAINER -->
+    
+ <!--FOOTER -->
+<footer id="footer" class="site-footer" role="contentinfo">
+  <section class="footer-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-inner">
+              <div class="site-info">
+                <p> Designed and Implemented by ... &copy;   
+           <script type="text/javascript">
+             document.write(new Date().getFullYear());
+           </script>
+            All Rights Reserved.
+           </p>
+              </div><!-- .site-info -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+ <!--FOOTER -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Javascript source -->
+    <script type="text/javascript" src="myscripts.js"></script> 
+
+    
+  </body>
+</html>
